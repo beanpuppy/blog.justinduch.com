@@ -19,7 +19,7 @@
 
   const current_build = DateTime.now().setZone('Australia/Sydney');
 
-  function distanceFromPrev(post) {
+  const distanceFromPrev = (post) => {
     const index = posts.map((p) => p.date).indexOf(post.date);
     const prev_post = posts[index - 1];
 
@@ -33,7 +33,9 @@
     }
 
     return Math.ceil(Interval.fromDateTimes(start, end).length('days') / 2);
-  }
+  };
+
+  const isSPE = (post) => post.slug.startsWith('spe_');
 </script>
 
 <svelte:head>
@@ -53,22 +55,26 @@
   </div>
 
   <div class="post">
-    <p>
-      <a href="/post/{post.slug}" class="no-underline">
-        {post.title}
+    <div style="display: block;">
+      <a href="/post/{post.slug}" class="no-underline" class:spe={isSPE(post)}>
+        <p class:glitch={isSPE(post)} title={post.title}>
+          {post.title}
+        </p>
       </a>
-    </p>
-
-    <div class="bottom-border">
-      <div
-        style="border-bottom: 0.5em solid rgba(255, 255, 255, 0.2); max-width: 100%; width: {post.readtime}em;"
-      />
     </div>
 
-    <div class="post-info">
-      <small>publié sur {post.date}</small>
-      <small class="readtime">{post.readtime} min de lecture</small>
-    </div>
+    {#if !isSPE(post)}
+      <div class="bottom-border">
+        <div
+          style="border-bottom: 0.5em solid rgba(255, 255, 255, 0.2); max-width: 100%; width: {post.readtime}em;"
+        />
+      </div>
+
+      <div class="post-info">
+        <small>publié sur {post.date}</small>
+        <small class="readtime">{post.readtime} min de lecture</small>
+      </div>
+    {/if}
   </div>
 {/each}
 
@@ -89,9 +95,10 @@
     margin-bottom: 0;
   }
 
-  .post > p {
+  .post > div > a > p {
     padding-bottom: 0;
     margin: 0;
+    display: inline-block;
   }
 
   a {
@@ -101,5 +108,81 @@
 
   code {
     font-size: 0.7rem !important;
+  }
+
+  .glitch {
+    animation: glitch 1s linear infinite;
+  }
+
+  @keyframes glitch {
+    2%,
+    64% {
+      transform: translate(1px, 0) skew(0deg);
+    }
+    4%,
+    60% {
+      transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+      transform: translate(-4px, 0) skew(-5deg);
+    }
+  }
+
+  .glitch:before,
+  .glitch:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+
+  .glitch:before {
+    top: 0;
+    animation: glitchTop 0.8s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+
+  @keyframes glitchTop {
+    2%,
+    64% {
+      transform: translate(-2px, 0);
+    }
+    4%,
+    60% {
+      transform: translate(22px, 0);
+    }
+    62% {
+      transform: translate(-1px, -1px) skew(-13deg);
+    }
+    8%,
+    94% {
+      transform: translate(-4px, -1px) skew(13deg);
+    }
+  }
+
+  .glitch:after {
+    height: 1em;
+    top: 0;
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+
+  @keyframes glitchBotom {
+    2%,
+    64% {
+      transform: translate(2px, -1px) skew(-13deg);
+    }
+    4%,
+    60% {
+      transform: translate(-2px, 0);
+    }
+    62% {
+      transform: translate(-22px, 0);
+    }
+  }
+
+  .spe {
+    text-transform: initial;
   }
 </style>

@@ -1,6 +1,6 @@
 import { getPosts } from './_posts.js';
 
-export const get = async (request) => {
+export const get = async (_) => {
   let posts = getPosts(false).sort(function (a, b) {
     return new Date(b.date) - new Date(a.date);
   });

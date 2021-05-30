@@ -1,7 +1,3 @@
-// This file is called `_posts.js` rather than `posts.js`, because
-// we don't want to create an `/posts/posts` route — the leading
-// underscore tells Sapper not to do that.
-
 import * as fs from 'fs';
 import * as path from 'path';
 import * as crypto from 'crypto';

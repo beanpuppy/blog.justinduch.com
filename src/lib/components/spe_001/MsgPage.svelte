@@ -518,7 +518,7 @@
 
         <div class="message">
           <div>
-            <h4>baguette_fan</h4>
+            <h4>jeremy985</h4>
             <small>2020-09-13T22:53:10+10:00</small>
           </div>
           <p>O_____O u sure?</p>
@@ -787,6 +787,7 @@
           </div>
           <p>Thanks to:</p>
           <p>- GPT-2</p>
+          <p>- Everyone who's ever written a SCP.</p>
         </div>
         <div class="message">
           <p class="disabled">You have been kicked from this chat room.</p>

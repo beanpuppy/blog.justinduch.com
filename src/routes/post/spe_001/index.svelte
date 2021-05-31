@@ -72,16 +72,15 @@
     }
   };
 
-  const getTitle = () => {
-    if ($storyState.finish) return 'Documenting Website Bloat';
-    return $storyState.showCredits
-      ? 'Waking up one hour earlier can lower chance of major depression'
-      : 'Solving the Greatest Crisis of Our Time';
-  };
+  $: title = $storyState.finish
+    ? 'Documenting Website Bloat'
+    : $storyState.showCredits
+    ? 'PSYCHO streamer MALDS over being SHORT'
+    : 'Solving the Greatest Crisis of Our Time';
 </script>
 
 <svelte:head>
-  <title>{getTitle()}</title>
+  <title>{title}</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
     rel="stylesheet"
@@ -98,7 +97,7 @@
     <div class="tab" class:active={$storyState.page === 'post'} on:click={() => changeTab('post')}>
       <p>
         {$storyState.showCredits
-          ? 'Waking up one hour earlier can lower chance of major depression'
+          ? 'Deranged catgirl takes you on a roadtrip'
           : 'Solving the Greatest Crisis of Our Time'}
       </p>
     </div>

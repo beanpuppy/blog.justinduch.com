@@ -82,7 +82,7 @@
         </svg>
         <a href="/post/spe_001"
           >{$storyState.showCredits
-            ? 'Waking up one hour earlier can...'
+            ? 'vroom vroom im nascar'
             : 'Solving the Greatest Crisis of Our Time'}</a
         >
       </div>
@@ -90,7 +90,7 @@
       <div class="text-post">
         <h1>
           {$storyState.showCredits
-            ? 'Waking up one hour earlier can lower chance of major depression'
+            ? 'Everybody Wants to See This Happen'
             : 'Solving the Greatest Crisis of Our Time'}
         </h1>
 

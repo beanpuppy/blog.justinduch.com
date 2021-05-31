@@ -783,11 +783,11 @@
         <div class="message">
           <div>
             <h4>beanpup_py</h4>
-            <small>2021-07-24T11:33:50+10:00</small>
+            <small>2021-03-24T00:33:50+10:00</small>
           </div>
           <p>Thanks to:</p>
           <p>- GPT-2</p>
-          <p>- Everyone who's ever written a SCP.</p>
+          <p>- Everyone who's ever written a SCP</p>
         </div>
         <div class="message">
           <p class="disabled">You have been kicked from this chat room.</p>

@@ -75,7 +75,12 @@
       </p>
       <p>Let's also look at this post for funsies.</p>
       <img src="https://cdn.halcyonnouveau.xyz/blog/img/bloat-me2.png" />
-      <p>It's... 2.35 MB?! WHAT? How the feck did that happen?</p>
+      <p>It's... 2.35 MB?! WHAT? How the feck did that happen? This seems like a big problem.</p>
+      <p>
+        But it's still better than most websites and I'm <strong>very</strong> lazy, so let's just ignore
+        it?
+      </p>
+      <p>Yeah, cool. See you next time.</p>
     </div>
 
     <div class="info-line footer">

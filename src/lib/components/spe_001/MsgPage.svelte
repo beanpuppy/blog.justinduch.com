@@ -37,6 +37,22 @@
       class:disabled={!$storyState.showCredits}
       class:color-red={$storyState.showCredits}
     >
+      {#if !$storyState.showCredits}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="height: 1em;"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+          />
+        </svg>
+      {/if}
       credits
     </p>
     <h3>Private Messages</h3>
@@ -330,7 +346,7 @@
 
         <div class="message">
           <div>
-            <h4>baguette_fan</h4>
+            <h4>TheOldSter_</h4>
             <small>2020-01-14T01:47:52+10:00</small>
           </div>
           <p>
@@ -348,7 +364,7 @@
 
         <div class="message">
           <div>
-            <h4>baguette_fan</h4>
+            <h4>TheOldster_</h4>
             <small>2020-01-14T01:48:28+10:00</small>
           </div>
           <p>The timestamps on the chat logs are in your local timezone</p>
@@ -518,7 +534,7 @@
 
         <div class="message">
           <div>
-            <h4>jeremy985</h4>
+            <h4>Jeremy985</h4>
             <small>2020-09-13T22:53:10+10:00</small>
           </div>
           <p>O_____O u sure?</p>
@@ -786,8 +802,12 @@
             <small>2021-03-24T00:33:50+10:00</small>
           </div>
           <p>Thanks to:</p>
+          <p>- Marjolaine Potura</p>
           <p>- GPT-2</p>
           <p>- Everyone who's ever written a SCP</p>
+          <p>- Kalle Rovanperä</p>
+          <p>- Germany (all of it)</p>
+          <p>- Karl Marx</p>
         </div>
         <div class="message">
           <p class="disabled">You have been kicked from this chat room.</p>

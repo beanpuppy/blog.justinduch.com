@@ -97,7 +97,7 @@
     <div class="tab" class:active={$storyState.page === 'post'} on:click={() => changeTab('post')}>
       <p>
         {$storyState.showCredits
-          ? 'Deranged catgirl takes you on a roadtrip'
+          ? 'Everybody Wants to See This Happen'
           : 'Solving the Greatest Crisis of Our Time'}
       </p>
     </div>

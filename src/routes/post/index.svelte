@@ -55,7 +55,7 @@
   </div>
 
   <div class="post">
-    <div style="display: block;">
+    <div style="display: inherit;">
       <a href="/post/{post.slug}" class="no-underline" class:spe={isSPE(post)}>
         <p class:glitch={isSPE(post)} title={post.title}>
           {post.title}

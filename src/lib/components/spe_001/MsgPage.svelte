@@ -808,6 +808,10 @@
           <p>- Kalle Rovanperä</p>
           <p>- The flag of Germany</p>
           <p>- Karl Marx</p>
+          <p>
+            - The IRC channels that taught me about the bad words (and more) during my critical
+            development years
+          </p>
         </div>
         <div class="message">
           <p class="disabled">You have been kicked from this chat room.</p>

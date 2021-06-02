@@ -5,12 +5,12 @@
   import storyState, { resetStoryState } from '$lib/stores/spe_001/state';
 
   let scrollTop;
-
   let scrollHeights = {
     post: null,
     ent: null,
     msg: null
   };
+  let trans = false;
 
   onMount(() => {
     storyState.useSessionStorage();
@@ -77,6 +77,24 @@
     : $storyState.showCredits
     ? 'PSYCHO streamer MALDS over being SHORT'
     : 'Solving the Greatest Crisis of Our Time';
+
+  $: if ($storyState.startTransition === true) {
+    trans = true;
+
+    setTimeout(() => {
+      storyState.update((s) => {
+        s.startTransition = false;
+        s.pageNotifications.msg = true;
+        s.showCredits = true;
+        return s;
+      });
+
+      setTimeout(() => {
+        window.scrollTo({ top: 0 });
+        trans = false;
+      });
+    }, 4000);
+  }
 </script>
 
 <svelte:head>
@@ -90,6 +108,12 @@
     rel="stylesheet"
   />
 </svelte:head>
+
+{#if trans}
+  <div class="trans" transition:fade>
+    <p>Usko minua...</p>
+  </div>
+{/if}
 
 {#if $storyState.showTabBar}
   <div class="tab-bar" in:fade={{ duration: 500 }}>
@@ -137,6 +161,20 @@
 </div>
 
 <style>
+  .trans {
+    position: fixed;
+    background: #fff;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
   .margin-top {
     margin-top: 2.43em;
   }
@@ -198,10 +236,10 @@
   }
 
   .tab.notify {
-    animation: fadeb 800ms ease-out infinite alternate;
+    animation: alert 800ms ease-out infinite alternate;
   }
 
-  @keyframes fadeb {
+  @keyframes alert {
     0% {
       border: 2px solid rgb(243, 244, 246);
     }

@@ -9,6 +9,7 @@ const defaultState = {
     ent: true
   },
   msgPage: 'introductions',
+  startTransition: false,
   showCredits: false,
   finish: false,
 };

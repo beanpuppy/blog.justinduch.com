@@ -806,7 +806,7 @@
           <p>- GPT-2</p>
           <p>- Everyone who's ever written a SCP</p>
           <p>- Kalle Rovanperä</p>
-          <p>- Germany (all of it)</p>
+          <p>- The flag of Germany</p>
           <p>- Karl Marx</p>
         </div>
         <div class="message">

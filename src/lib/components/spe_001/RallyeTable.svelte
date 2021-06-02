@@ -253,8 +253,9 @@
 
     if (rallyeTableSettings.season === '2019' && first.driver === 'Sébastien Ogier') {
       storyState.update((s) => {
-        s.pageNotifications.msg = true;
-        s.showCredits = true;
+        s.startTransition = true;
+        /* s.pageNotifications.msg = true; */
+        /* s.showCredits = true; */
         return s;
       });
 

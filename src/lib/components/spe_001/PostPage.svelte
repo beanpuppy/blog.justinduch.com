@@ -540,13 +540,14 @@
             </div>
 
             <p>
-              Wow! Cool! That completely backfired and it's now as worse as ever! Awesome Pawesome!
+              Awesome... awesome pawesome. That completely backfired and it's now as worse as ever!
             </p>
 
             <p>
               Arrrghhh I guess it's going have to come to this then. Do you see the last rally on
               that table: Rally Monza (MNZ)? Notice how one driver got 25 points but the other only
-              got 3 points from the Power Stage. What happens if we just... remove it?
+              got 3 points from the Power Stage (ignore the Premier Stage in square brackets). What
+              happens if we just... remove it?
             </p>
 
             <div style="width: 100%; text-align: center" id="scroll-target">

@@ -793,6 +793,60 @@
         </div>
 
         <div class="message">
+          <div>
+            <h4>CactusJac</h4>
+            <small>2020-11-28T11:45:49+10:00</small>
+          </div>
+          <p>Nice, ok that's done. Hope something cool happens, this is such a weird anomaly.</p>
+        </div>
+
+        <div class="message">
+          <div>
+            <h4>baguette_fan</h4>
+            <small>2020-11-28T11:47:28+10:00</small>
+          </div>
+          <p>by weird, i hope you mean *stupid*. This is a *stupid* anomaly.</p>
+        </div>
+
+        <div class="message">
+          <div>
+            <h4>baguette_fan</h4>
+            <small>2020-11-28T11:49:52+10:00</small>
+          </div>
+          <p>
+            I mean like yeah sure, a restructuring event giving the French total domination over a
+            sport sure can lead to some WACKY scenarios just by virtue of the butterfly effect. But
+            what are we even learning from this? Honestly, we're not getting any new information
+            from these types of experiments, we're just fucking up some para-reality for no reason.
+          </p>
+        </div>
+
+        <div class="message">
+          <div>
+            <h4>baguette_fan</h4>
+            <small>2020-11-28T11:51:22+10:00</small>
+          </div>
+          <p>
+            Fuck this is dumb. I've wasted a year of my life on this shit. We STILL don't know where
+            ENT#344 came from. We STILL don't know why it can cause a RRE. But we DID create a
+            preset for para-realites to help us run this dogshit test that helps NOBODY. What kind
+            of troglodyte neanderthal ass motherfucker thinks this is such important work that we
+            need FOUR researchers on it.
+          </p>
+        </div>
+
+        <div class="message">
+          <div>
+            <h4 class="color-red">Mattster_BM</h4>
+            <small>2020-11-28T11:53:01+10:00</small>
+          </div>
+          <p>
+            @baguette_fan, please stop with the mindless ranting. You need to be a good influence on
+            your junior, we don't want to reprimand you again.
+          </p>
+        </div>
+
+        <div class="message">
           <p class="disabled">Error: chat logs missing</p>
         </div>
       {:else if $storyState.msgPage === 'credits'}
@@ -803,15 +857,32 @@
           </div>
           <p>Thanks to:</p>
           <p>- Marjolaine Potura</p>
+          <p>- Abigail Cassandra</p>
+          <p>And:</p>
           <p>- GPT-2</p>
-          <p>- Everyone who's ever written a SCP</p>
+          <p>- Red pandas (all of them)</p>
+          <p>
+            - Everyone who's ever written a SCP (especially whoever wrote the one that gave me
+            nightmares as a kid)
+          </p>
           <p>- Kalle Rovanperä</p>
-          <p>- The flag of Germany</p>
+          <p>- Les chansons de geste (but mainly Astolfo)</p>
           <p>- Karl Marx</p>
           <p>
-            - The IRC channels that taught me about the bad words (and more) during my critical
+            - All the IRC channels that taught me about the bad words (and more) during my critical
             development years
           </p>
+          <p>- The FIA</p>
+          <p>- My crippling anxiety</p>
+          <p>
+            - That one video of that cat with a lazy eye who's trying to get to the bottom of a bag
+            of chips but they just can't quite seem to get the last chip.
+          </p>
+          <p>- The Fate anime (but mainly Astolfo)</p>
+          <p>- Rich Harris</p>
+          <p>- The people at the cafe I go to who know my order so I don't have to talk to them</p>
+          <p>- Getting blocked by Hideki Kamiya on Twitter</p>
+          <p>- Income taxes</p>
         </div>
         <div class="message">
           <p class="disabled">You have been kicked from this chat room.</p>

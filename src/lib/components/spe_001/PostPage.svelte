@@ -100,7 +100,7 @@
             <p>
               Did you hear about the attack on the US Capitol Building? How did that even happen?
               People died. I can understand feeling a "strong distrust of the federal government",
-              but seriously there must be somthing wrong with them.
+              but seriously there must be something wrong with them.
             </p>
             <p>
               Wow, are people really anti-vaccination now? There are papers circulating everywhere
